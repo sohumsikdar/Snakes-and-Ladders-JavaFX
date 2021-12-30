@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.playerController">
+   <ImageView fitHeight="750.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@back_game.jpg" />
+   </ImageView>
+   <ImageView fitHeight="493.0" fitWidth="431.0" layoutX="7.0" layoutY="82.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="82.0">
+      <Image url="@board.png" />
+   </ImageView>
+   <ImageView fx:id="testDice" fitHeight="80.0" fitWidth="80.0" layoutX="183.0" layoutY="644.0" onMouseClicked="#diceThrowControl" onMouseEntered="#mouseOnDice" onMouseExited="#mouseOffDice">
+      <Image url="@1.png" />
+   </ImageView>
+   <ImageView fx:id="blue" fitHeight="24.0" fitWidth="14.0" layoutX="13.0" layoutY="558.0">
+      <Image url="@blue.png" />
+   </ImageView>
+   <ImageView fx:id="green" fitHeight="24.0" fitWidth="14.0" layoutX="30.0" layoutY="558.0">
+      <Image url="@green.png" />
+   </ImageView>
+   <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="80.0" layoutX="13.0" layoutY="14.0" onMouseClicked="#getWarning" onMouseEntered="#mouseOnBack" onMouseExited="#mouseOffBack">
+      <Image url="@back.png" />
+   </ImageView>
+   <ImageView fx:id="arrow" fitHeight="50.0" fitWidth="53.0" layoutX="197.0" layoutY="580.0">
+      <image>
+         <Image url="@arrow.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="warning" fitHeight="380.0" fitWidth="416.0" layoutX="-364.0" layoutY="-750.0">
+      <image>
+         <Image url="@warning.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="yes" fitHeight="103.0" fitWidth="119.0" layoutX="-223.0" layoutY="-165.0" onMouseClicked="#returnToMenu" onMouseEntered="#mouseOnYes" onMouseExited="#mouseOffYes">
+      <image>
+         <Image url="@yes.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="no" fitHeight="97.0" fitWidth="115.0" layoutX="207.0" layoutY="-280.0" onMouseClicked="#returnToGame" onMouseEntered="#mouseOnNo" onMouseExited="#mouseOffNo">
+      <image>
+         <Image url="@no.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="greenWin" fitHeight="384.0" fitWidth="406.0" layoutX="614.0" layoutY="-321.0">
+      <image>
+         <Image url="@green_won.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="blueWin" fitHeight="384.0" fitWidth="406.0" layoutX="592.0" layoutY="159.0">
+      <image>
+         <Image url="@blue_won.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="player1" fitHeight="70.0" fitWidth="70.0" layoutX="80.0" layoutY="647.0">
+      <image>
+         <Image url="@avatar_1.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="player2" fitHeight="70.0" fitWidth="70.0" layoutX="300.0" layoutY="649.0">
+      <image>
+         <Image url="@avatar_2.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

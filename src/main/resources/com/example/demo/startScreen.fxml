@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SceneController">
+   <ImageView fitHeight="773.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@back_game.jpg" />
+   </ImageView>
+   <ImageView fitHeight="210.0" fitWidth="411.0" layoutX="19.0" layoutY="14.0">
+      <Image url="@back_sl_main-removebg-preview.png" />
+   </ImageView>
+   <ImageView fx:id="exit" fitHeight="43.0" fitWidth="77.0" layoutX="190.0" layoutY="683.0" onMouseClicked="#exitApp" onMouseEntered="#mouseOnExit" onMouseExited="#mouseOffExit">
+      <Image url="@exit_button.png" />
+   </ImageView>
+   <ImageView fx:id="credits" fitHeight="43.0" fitWidth="128.0" layoutX="160.0" layoutY="624.0" onMouseClicked="#showCredits" onMouseEntered="#mouseOnCredits" onMouseExited="#mouseOffCredits">
+      <Image url="@credits_button.png" />
+   </ImageView>
+   <ImageView fx:id="rules" fitHeight="43.0" fitWidth="114.0" layoutX="171.0" layoutY="562.0" onMouseClicked="#showRules" onMouseEntered="#mouseOnRules" onMouseExited="#mouseOffRules">
+      <Image url="@rules_button.png" />
+   </ImageView>
+   <ImageView fx:id="single" fitHeight="50.0" fitWidth="200.0" layoutX="128.0" layoutY="491.0" onMouseClicked="#switchToSingle" onMouseEntered="#mouseOnSingle" onMouseExited="#mouseOffSingle">
+      <image>
+         <Image url="@singleplayer_butt.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="multi" fitHeight="48.0" fitWidth="200.0" layoutX="128.0" layoutY="428.0" onMouseClicked="#switchToMultiplayer" onMouseEntered="#mouseOnMulti" onMouseExited="#mouseOffMulti">
+      <image>
+         <Image url="@multiplayer_butt.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

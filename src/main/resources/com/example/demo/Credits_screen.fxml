@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CreditScene">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back_game.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="80.0" layoutX="13.0" layoutY="14.0" onMouseClicked="#backToMenu" onMouseEntered="#mouseOnBack" onMouseExited="#mouseOffBack">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="259.0" layoutX="99.0" layoutY="150.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="90.0">
+         <image>
+            <Image url="@credits_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="422.0" layoutX="18.0" layoutY="354.0">
+         <image>
+            <Image url="@credits_pic.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

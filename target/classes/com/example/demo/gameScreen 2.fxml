@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.playerController">
+   <ImageView fitHeight="750.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@back_game.jpg" />
+   </ImageView>
+   <ImageView fitHeight="493.0" fitWidth="431.0" layoutX="7.0" layoutY="82.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="82.0">
+      <Image url="@board.png" />
+   </ImageView>
+   <ImageView fx:id="testDice" fitHeight="80.0" fitWidth="80.0" layoutX="183.0" layoutY="644.0" onMouseClicked="#diceThrowControl" onMouseEntered="#mouseOnDice" onMouseExited="#mouseOffDice">
+      <Image url="@1.png" />
+   </ImageView>
+   <ImageView fx:id="blue" fitHeight="31.0" fitWidth="18.0" layoutX="13.0" layoutY="558.0">
+      <Image url="@blue.png" />
+   </ImageView>
+   <ImageView fx:id="green" fitHeight="31.0" fitWidth="18.0" layoutX="33.0" layoutY="558.0">
+      <Image url="@green.png" />
+   </ImageView>
+   <ImageView fx:id="backButton" fitHeight="50.0" fitWidth="80.0" layoutX="13.0" layoutY="14.0" onMouseEntered="#mouseOnBack" onMouseExited="#mouseOffBack">
+      <Image url="@back.png" />
+   </ImageView>
+   <ImageView fx:id="arrow" fitHeight="50.0" fitWidth="53.0" layoutX="197.0" layoutY="589.0">
+      <image>
+         <Image url="@arrow.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

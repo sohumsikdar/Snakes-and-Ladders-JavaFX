@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back_game.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="126.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="259.0" layoutX="96.0" layoutY="275.0">
+         <image>
+            <Image url="@credits_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="250.0" fitWidth="422.0" layoutX="14.0" layoutY="416.0">
+         <image>
+            <Image url="@credits_pic.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

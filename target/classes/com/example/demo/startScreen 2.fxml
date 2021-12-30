@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0"
+            prefWidth="448.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <ImageView fitHeight="773.0" fitWidth="448.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@back_game.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="210.0" fitWidth="411.0" layoutX="19.0" layoutY="14.0">
+      <Image url="@back_sl_main-removebg-preview.png"/>
+   </ImageView>
+   <ImageView fitHeight="82.0" fitWidth="114.0" layoutX="168.0" layoutY="654.0">
+      <Image url="@exit_button.png"/>
+   </ImageView>
+   <ImageView fitHeight="61.0" fitWidth="166.0" layoutX="142.0" layoutY="369.0">
+      <Image url="@start_button.png"/>
+   </ImageView>
+   <ImageView fitHeight="71.0" fitWidth="166.0" layoutX="142.0" layoutY="566.0">
+      <Image url="@credits_button.png"/>
+   </ImageView>
+   <ImageView fitHeight="61.0" fitWidth="166.0" layoutX="141.0" layoutY="473.0">
+      <Image url="@rules_button.png"/>
+   </ImageView>
+</AnchorPane>
