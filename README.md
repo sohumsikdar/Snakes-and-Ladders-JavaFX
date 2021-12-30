@@ -42,7 +42,7 @@ All assets used to make the user interface of the game are located at
 
 <br>
 
-## Rule Page
+## Game Screen
 
 <br>
 
