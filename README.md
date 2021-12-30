@@ -23,5 +23,37 @@ All assets used to make the user interface of the game are located at
     /Snakes-and-Ladders-JavaFX/src/main/resources/com/example/demo/
 
 
-    
+<br>
+
+## Main Menu
+
+<br>
+
+![Alt text](src/main/resources/com/example/demo/mainMenuDemo.png "Main Menu")
+
+
+<br>
+
+## Rule Page
+
+<br>
+
+![Alt text](src/main/resources/com/example/demo/ruleScreenDemo.png "Rules")
+
+<br>
+
+## Rule Page
+
+<br>
+
+![Alt text](src/main/resources/com/example/demo/gameScreenDemo.png "Game Screen")
+
+<br>
+<br>
+
+
+
+Made with ❤️ by Sohum Sikdar & Krishnam Omar
+
+
 
