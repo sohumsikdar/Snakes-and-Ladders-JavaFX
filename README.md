@@ -49,11 +49,7 @@ All assets used to make the user interface of the game are located at
 ![Alt text](src/main/resources/com/example/demo/gameScreenDemo.png "Game Screen")
 
 <br>
-<br>
 
-
-
-Made with ❤️ by Sohum Sikdar & Krishnam Omar
-
-
-
+<p align="center">
+Made with ❤️ by Sohum Sikdar & Krishnam Omar    
+</p>
