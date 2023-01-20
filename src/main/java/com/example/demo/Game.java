@@ -10,82 +10,50 @@ public class Game {
     //Hashes start to ladder
     public static HashMap<Integer, ladder> Ladders = new HashMap<>();
 
+    private final Tile tile = new Tile(18, 535, 45, 45);
+
+    private final int rows = 10;
+    private final int cols = 10;
+
     public Game() {
 
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(18);
-        arr.add(558);
+        final ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(tile.getTileStart());
+        arr.add(tile.getTileEnd());
+        System.out.println(arr);
         Board.put(0, arr);
 
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(535);
-            Board.put(i,x);
+        int count = 1;
+
+        for (int y = 0; y < cols; y++) {
+
+            if (y % 2 == 0) {
+                for (int x = 1; x <= rows; x++) {
+
+                    ArrayList<Integer> tempArray = new ArrayList<>();
+                    tempArray.add(tile.getTileStart() + ((x - 1) * tile.getNextTileX()));
+                    if (x == 1) {
+                        tile.setTileEnd(tile.getTileEnd() - tile.getNextTileY());
+                    }
+                    tempArray.add(tile.getTileEnd());
+                    Board.put(count, tempArray);
+                    count++;
+                }
+            } else {
+                for (int x = rows; x >= 1; x--) {
+
+                    ArrayList<Integer> tempArray = new ArrayList<>();
+                    tempArray.add(tile.getTileStart() + ((x - 1) * tile.getNextTileX()));
+                    if (x == rows) {
+                        tile.setTileEnd(tile.getTileEnd() - tile.getNextTileY());
+                    }
+                    tempArray.add(tile.getTileEnd());
+                    Board.put(count, tempArray);
+                    count++;
+                }
+            }
         }
 
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(481);
-            Board.put(21-i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(434);
-            Board.put(20+i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(387);
-            Board.put(41-i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(336);
-            Board.put(40+i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(288);
-            Board.put(61-i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(238);
-            Board.put(60+i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(192);
-            Board.put(81-i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(142);
-            Board.put(80+i,x);
-        }
-
-        for (int i=1; i<=10; i++){
-            ArrayList<Integer> x = new ArrayList<>();
-            x.add(23+((i-1)*42));
-            x.add(95);
-            Board.put(101-i,x);
-        }
 
         snake a15 = new snake(15, 5);
         a15.putPoints(233, 481);
@@ -98,14 +66,14 @@ public class Game {
         a22.putPoints(65, 434);
         a22.putPoints(53, 473);
         a22.putPoints(79, 511);
-        a22.putPoints(65 ,535);
+        a22.putPoints(65, 535);
         Snakes.put(22, a22);
 
         snake a33 = new snake(33, 8);
         a33.putPoints(317, 387);
         a33.putPoints(336, 424);
         a33.putPoints(312, 457);
-        a33.putPoints(326 ,487);
+        a33.putPoints(326, 487);
         a33.putPoints(312, 510);
         a33.putPoints(317, 535);
         Snakes.put(33, a33);
@@ -121,7 +89,7 @@ public class Game {
         a68.putPoints(317, 238);
         a68.putPoints(374, 273);
         a68.putPoints(323, 305);
-        a68.putPoints(393,329);
+        a68.putPoints(393, 329);
         a68.putPoints(375, 335);
         a68.putPoints(401, 336);
         Snakes.put(68, a68);
@@ -176,5 +144,7 @@ public class Game {
         Ladders.put(69, new ladder(69, 93));
         Ladders.put(75, new ladder(75, 95));
         Ladders.put(78, new ladder(78, 97));
+
     }
+
 }
